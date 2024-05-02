@@ -1,6 +1,6 @@
-# AeroPad Template
+# LRM AeroPad Plugin Template & Guide
    
-Welcome to this AeroPad Plguin Template & guide. This guide, is meant to teach you how to create a simple plugin that fetches some data from LRM.
+Welcome to my AeroPad Plugin Template & guide. This guide, is meant to teach you how to create a simple plugin that fetches some data from LRM.
 
 This template assumes you are a beginner developer, with little to no experience. It's designed to show you how to get started with simple programming, and write a super simple plugin for the AeroPad.  you want to invest more time and have the will to learn even more HTML, CSS & JS, than what this guide offers, I strongly advocate for https://www.w3schools.com/. 
 
