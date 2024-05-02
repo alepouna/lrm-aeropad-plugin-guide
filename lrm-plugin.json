@@ -1,0 +1,10 @@
+{
+  "name": "Aeropad Template",
+  "description": "A template to use for Aeropad development",
+  "icon": "icon.png",
+  "developer": "alepouna (Aurora Takemi)",
+  "url": "https://gitlab.com/alepounas-guides/lrm-aeropad-example-plugin/-/blob/main/README.md?ref_type=heads",
+  "version": "1.0.0",
+  "open_mode": "same",
+  "remote_app_url": null
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<!-- If you have followed the guide, this file should look near-or exactly identical to the one you created. -->
+
+<!-- Standard LRM Tablet "Back Button"-->
+<span style="position: absolute; top: 0; margin-top: 5px; margin-left: 5px; z-index: 1000;">
+    <a href="/plugins/" class="text-light">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#FFFFFF"
+             class="bi bi-arrow-90deg-left" viewBox="0 0 32 32">
+            <path fill-rule="evenodd"
+                  d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+        </svg>
+        <i class="bi bi-arrow-90deg-left"></i>
+    </a>
+</span>
+<!-- End Standard LRM Tablet "Back Button"-->
+
+<div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-slate-900 py-6 sm:py-12">
+    <div class="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+        <div class="divide-y divide-gray-300/50">
+            <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
+                <p>Hello world</p>
+                <p id="sim-status"></p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+<script>
+    window.onload = function() {
+        alert("Hello world");
+
+        const p = document.getElementById("sim-status");
+
+        function probeLRM() {
+            fetch('http://127.0.0.1:8320/v1/a')
+            .then(response => {
+                if (!response.ok) {
+                throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data) //Prints the data in the console
+                p.innerText = data.lv //Set the LRM version field 
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+        }
+
+        setInterval(probeLRM, 1000)
+    }
+</script>
+</html>
