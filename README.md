@@ -4,7 +4,18 @@ Welcome to this AeroPad Plguin Template & guide. This guide, is meant to teach y
 
 This template assumes you are a beginner developer, with little to no experience. It's designed to show you how to get started with simple programming, and write a super simple plugin for the AeroPad.  you want to invest more time and have the will to learn even more HTML, CSS & JS, than what this guide offers, I strongly advocate for https://www.w3schools.com/. 
 
-This guide is best viewed on GitHub. You can find it here: https://github.com/alepouna/lrm-aeropad-plugin-guide
+This guide is best viewed on GitHub. You can find it here: https://github.com/alepouna/lrm-aeropad-plugin-guide - *For contributors, check the comment below this line when reading this file*
+<!--
+If you are reading this on GitHub:
+Due to personal issues with GitHub, I will not be reviewing comments, issues or PRs on the GitHub repo. Feel free to instead file issues, PRs, etc. on GitLab: https://gitlab.com/alepounas-guides/lrm-aeropad-example-plugin
+
+For GitLab contributors: 
+I will be manually updating any changes from GitLab to GitHub, until I either find or create a solution that syncs them with actions or something. 
+
+To those wondering why use both? 
+1. Like mentioned earlier, I don't wish to use GitHub anymore due to personal issues, ask me over a beer. 
+2. GitHub has a much nicer UI for showing the markdown files (such as tips, notes, etc.) compared to GitLab. 
+--> 
 
 ## The Basics
 
